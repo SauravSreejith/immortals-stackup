@@ -1,4 +1,4 @@
-![StackUp Banner]([https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg])
+![StackUp Banner](https://media.discordapp.net/attachments/1155198278787411968/1171457436419375115/stackup20banner.png)
 # Project Name
 Long Description about project. This project do that. This project is awesome...
 ## Team members
