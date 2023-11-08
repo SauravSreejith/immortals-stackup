@@ -1,11 +1,11 @@
 ![StackUp Banner](https://media.discordapp.net/attachments/1155198278787411968/1171457436419375115/stackup20banner.png)
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+# Taskbuddy
+A Task Management application project for Tinkerhub StackUp
 ## Team members
-1. Name [Embed personal github URL]
+1. [Saurav Sreejith](https://github.com/SauravSreejith)
 2. Name [Embed perosnal github URL]
 ## Team Id
-Team id here
+immortals
 ## Link to product walkthrough
 [link to video]
 ## How it Works ?
