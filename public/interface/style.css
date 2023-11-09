@@ -1,0 +1,74 @@
+html {
+    background-color: #424549;
+    overflow: hidden;
+    
+}
+
+nav {
+    background-color: #36393e !important;
+}
+
+nav img {
+    max-height: 64px;
+    min-height: 48px;
+
+}
+
+nav span {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: white;
+}
+
+nav input {
+    background-color: #424549 !important;
+    color:azure !important;
+}
+
+nav input::placeholder {
+    color:aliceblue !important
+}
+
+#input-control {
+    display: flex;
+    flex-direction: vertical;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px
+}
+
+#message-display {
+    top: 80px;
+    color:white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    max-height: 500px;
+}
+
+#avatar {
+    height: 48px;
+    width: 48px
+}
+
+#username {
+    color: white
+}
+
+.modal-card .modal-card-head{
+    background-color: #36393e !important;
+    border-bottom: none;
+}
+
+.modal-card .modal-card-body{
+    background-color: #424549 !important;
+}
+
+.modal-card .modal-card-foot{
+    border-top: none;
+    background-color: #36393e !important;
+}
+
+.media+.media {
+    border-top: none;
+}
