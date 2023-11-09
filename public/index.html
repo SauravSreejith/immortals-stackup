@@ -23,13 +23,13 @@
           <section class="modal-card-body" style="border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;">
             <p class="subtitle is-6" style="color:white;display: flex; justify-content: center;">Create an account or log in into existing account.</p>
             <p class="buttons" style="display: flex; justify-content: center;">
-                    <button class="button is-success" onclick="signUp()">
+                    <button class="button is-success" onclick="signupInterface()">
                       <span class="icon">
                         <i class="fa-solid fa-plus"></i>
                       </span>
                       <span>Sign Up</span>
                     </button>
-                    <button class="button is-success" onclick="logIn()">
+                    <button class="button is-success" onclick="loginInterface()">
                       <span class="icon">
                         <i class="fa-solid fa-right-to-bracket"></i>
                       </span>
@@ -50,15 +50,15 @@
           </header>
           <section class="modal-card-body">
             <p class="subtitle is-6" style="color:white;">Username :</p>
-            <input class="input is-primary is-hovered" type="text" id="login-input" placeholder="Example: CoffeeLover99">
+            <input class="input is-primary is-hovered" type="text" id="signup-username-input" placeholder="Example: CoffeeLover99">
             <p class="subtitle is-6" style="color:orangered;" id="signup-username-error"></p>
 
-            <p class="subtitle is-6" style="color:white;" id="login-error-msg">Password :</p>
-            <input class="input is-primary is-hovered" type="text" id="login-input" placeholder="Password should be atleast 8 characters long">
+            <p class="subtitle is-6" style="color:white;">Password :</p>
+            <input class="input is-primary is-hovered" type="text" id="signup-password-input" placeholder="Password should be atleast 8 characters long">
             <p class="subtitle is-6" style="color:orangered;" id="signup-password-error"></p>
           </section>
           <footer class="modal-card-foot">
-            <button class="button is-success" onclick="loginAuth()" id="login-button">
+            <button class="button is-success" onclick="signUp()" id="login-button">
               <span class="icon is-small">
                 <i class="fa-solid fa-plus"></i>
               </span>
@@ -78,12 +78,12 @@
           </header>
           <section class="modal-card-body">
             <p class="subtitle is-6" style="color:white;">Username :</p>
-            <input class="input" type="text" id="login-input" >
-            <p class="subtitle is-6" style="color:orangered;" id="signup-username-error"></p>
+            <input class="input" type="text" id="login-username-input">
+            <p class="subtitle is-6" style="color:orangered;" id="login-username-error"></p>
 
-            <p class="subtitle is-6" style="color:white;" id="login-error-msg">Password :</p>
-            <input class="input" type="text" id="login-input">
-            <p class="subtitle is-6" style="color:orangered;" id="signup-password-error"></p>
+            <p class="subtitle is-6" style="color:white;">Password :</p>
+            <input class="input" type="text" id="login-password-input">
+            <p class="subtitle is-6" style="color:orangered;" id="login-password-error"></p>
         
             <label class="checkbox" style="color: white;">
                 <input type="checkbox" id="login-remember-me">
@@ -126,6 +126,7 @@
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/adf55719b6.js" crossorigin="anonymous"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/loginAuth.js"></script>
+    <script src="./scripts/events.js"></script>
   </body>
 </html>
