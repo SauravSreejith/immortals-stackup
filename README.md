@@ -1,6 +1,8 @@
 ![StackUp Banner](https://media.discordapp.net/attachments/1155198278787411968/1171457436419375115/stackup20banner.png)
-# TaskBuddy
+# Task Buddy
 A Task Management application project for Tinkerhub StackUp
+
+![Task Buddy](https://cdn.discordapp.com/attachments/1155198278787411968/1172039439330054184/TASK_BUDDY-removebg-preview_1.png)
 ## Team members
 1. [Saurav Sreejith](https://github.com/SauravSreejith)
 2. Name [Embed perosnal github URL]
