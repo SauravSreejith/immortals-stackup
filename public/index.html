@@ -58,7 +58,7 @@
             <p class="subtitle is-6" style="color:orangered;" id="signup-password-error"></p>
           </section>
           <footer class="modal-card-foot">
-            <button class="button is-success" onclick="signUp()" id="login-button">
+            <button class="button is-success" onclick="signUp()" id="signup-button">
               <span class="icon is-small">
                 <i class="fa-solid fa-plus"></i>
               </span>
@@ -84,14 +84,9 @@
             <p class="subtitle is-6" style="color:white;">Password :</p>
             <input class="input" type="text" id="login-password-input">
             <p class="subtitle is-6" style="color:orangered;" id="login-password-error"></p>
-        
-            <label class="checkbox" style="color: white;">
-                <input type="checkbox" id="login-remember-me">
-                Remember me
-              </label>
           </section>
           <footer class="modal-card-foot">
-            <button class="button is-success" onclick="loginAuth()" id="login-button">
+            <button class="button is-success" onclick="logIn()" id="login-button">
               <span class="icon is-small">
                 <i class="fa-solid fa-right-to-bracket"></i>
               </span>
@@ -126,6 +121,8 @@
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/adf55719b6.js" crossorigin="anonymous"></script>
+    <script src="./interface/bulma-toast.js"></script>
+    <script src="./scripts/misc.js"></script>
     <script src="./scripts/loginAuth.js"></script>
     <script src="./scripts/events.js"></script>
   </body>
