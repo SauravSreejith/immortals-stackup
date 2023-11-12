@@ -5,7 +5,7 @@
 A Task Management application project for Tinkerhub StackUp
 ## Team members
 1. [Saurav Sreejith](https://github.com/SauravSreejith)
-2. Name [Embed perosnal github URL]
+2. [Karthik Dileep](https://github.com/imkarthikdileep)
 ## Team Id
 immortals
 ## Link to product walkthrough
