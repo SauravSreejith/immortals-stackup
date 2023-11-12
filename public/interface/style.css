@@ -1,11 +1,11 @@
 html {
-    background-color: #424549;
+    background-color: #5A189A;
     overflow: hidden;
     
 }
 
 nav {
-    background-color: #36393e !important;
+    background-color:#240046 !important;
 }
 
 nav img {
@@ -71,4 +71,65 @@ nav input::placeholder {
 
 .media+.media {
     border-top: none;
+}
+
+#tasklist-container {
+    position: relative;
+    top: 100px;
+    max-width: 98%;
+    left: 13px;
+    background-color: #C77DFF;
+    border-radius: 10px
+}
+
+#tasklist-container .message-header {
+    background-color: #3C096C;
+    min-height: 75px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+#tasklist-container .message-body {
+    min-height:450px;
+    background-color: #7B2CBF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: horizontal;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#task-card {
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: 	#9D4EDD;
+    color: white;
+}
+
+#task-card .card-header{
+    background-color: #3C096C;
+}
+#task-card .card-content {
+    background-color: 	#9D4EDD;
+    overflow-y: auto;
+    max-height: 350px;
+    
+}
+
+#taskDisplay {
+    width: 352px;
+    display: flex;
+    flex-direction: hortizontal;
+    background-color: #E0AAFF;
+    overflow: hidden; /* hide the overflow content */
+    word-wrap: break-word;
+}
+
+
+p {
+    color: white !important;
 }

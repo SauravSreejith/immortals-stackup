@@ -1,19 +1,34 @@
-#message-display::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+.message-body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
-	background-color: #424549;
+	background-color: #7B2CBF;
 }
 
-#message-display::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #555
+.message-body::-webkit-scrollbar {
+	width: 16px;
+	background-color: #7B2CBF
 }
 
-#message-display::-webkit-scrollbar-thumb
-{
+.message-body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color:#393f47;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #10002B;
+}
+
+
+#scroll-list::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #7B2CBF;
+}
+
+#scroll-list::-webkit-scrollbar {
+	width: 16px;
+	background-color: #7B2CBF
+}
+
+#scroll-list::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #5A189A;
 }

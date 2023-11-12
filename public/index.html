@@ -8,6 +8,7 @@
     <!--Load CSS-->
     <link rel="icon" href="./resources/logo.png">
     <link rel="stylesheet" href="./interface/bulma.min.css">
+    <link rel="stylesheet" href="./interface/scrollbar.css">
     <link rel="stylesheet" href="./interface/style.css">
   </head>
 
@@ -116,8 +117,73 @@
         </div>
     </nav>
 
+    <article class="message" id="tasklist-container">
+      <div class="message-header">
+        <p style="font-size: x-large;">Task Lists</p>
+
+        <p class="buttons">
+          <button class="button" style="background-color: #7B2CBF;">
+            <span class="icon is-small">
+              <i class="fa-sharp fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+            </span>
+          </button>
+          <button class="button" style="background-color: #7B2CBF;">
+            <span class="icon is-small">
+              <i class="fa-sharp fa-solid fa-plus" style="color: #ffffff;"></i>
+            </span>
+          </button>
+        </p>
+
+      </div>
+      <div class="message-body">
+
+        <div class="card" id="task-card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Task Name
+            </p>
+
+            <button class="card-header-icon" style="display: flex;gap: 10px">
+              <div class="icon-container" onclick="myFunction()">
+                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+              </div>  
+              <div class="icon-container" onclick="myFunction()">
+                <i class="fa-solid fa-trash-can" style="color: #ffffff;"></i>
+              </div>             
+            </button>
+
+          </header>
+          <div class="card-content" id="scroll-list">
+            <div class="content">
+
+              <div class="box" id="taskDisplay">
+                <div class="container">
+                  <input type="checkbox" id="task1">
+                </div>
+                <div class="container" style="max-width: 270px;">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </b>
+                </div>
+                <div class="container" style="max-width: 20px;">
+                  <button class="card-header-icon" style="display: flex; flex-direction: column;">
+                    <div class="icon-container" onclick="myFunction()">
+                      <i class="fa-solid fa-pen-to-square" style="color: #5A189A;"></i>
+                    </div>
+                    <div class="icon-container" onclick="myFunction()">
+                      <i class="fa-solid fa-trash" style="color: #5A189A;"></i>
+                    </div>              
+                  </button>
+                </div>
+              </div>
 
 
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </article>
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/adf55719b6.js" crossorigin="anonymous"></script>
