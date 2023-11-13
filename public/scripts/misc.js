@@ -28,3 +28,7 @@ function heartBeat() {
     showToast("Server is offline", "is-danger", 14000)
   });
 }
+
+window.onload = setTimeout(verifySession, 1000)
+
+setInterval(heartBeat, 15000)
