@@ -100,6 +100,8 @@ app.post("/auth/hashVerify", async (req, res) => {
     db.get("Users").then(async users => {
         let person = users.find(user => user.username == req.body.name)
 
+        if (!person) return res.send({ auth: false })
+
         if (person.password == req.body.hash) { return res.send({ auth: true })} else res.send({ auth: false })
     })
 
