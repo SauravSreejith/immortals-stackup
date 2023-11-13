@@ -1,16 +1,17 @@
-html {
-    background-color: #5A189A;
+body, html {
+    height: 100%;
+    margin: 0;
     overflow: hidden;
-    
-}
+    background-color: #5A189A;
+  }
 
 nav {
     background-color:#240046 !important;
 }
 
 nav img {
-    max-height: 64px;
-    min-height: 48px;
+    min-height: 7vh;
+    max-height: 8vh;
 
 }
 
@@ -91,43 +92,22 @@ nav input::placeholder {
 }
 
 #tasklist-container .message-body {
-    min-height:450px;
     background-color: #7B2CBF;
+    max-height: 60vh;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    display: flex;
-    flex-direction: horizontal;
     gap: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-#task-card {
-    min-width: 400px;
-    max-width: 400px;
-    max-height: 400px;
-    background-color: 	#9D4EDD;
-    color: white;
-}
-
-#task-card .card-header{
-    background-color: #3C096C;
-}
-#task-card .card-content {
-    background-color: 	#9D4EDD;
     overflow-y: auto;
-    max-height: 350px;
-    
 }
 
 #taskDisplay {
-    width: 352px;
-    display: flex;
-    flex-direction: hortizontal;
+    width: 100%;
+    height: 20vh;
     background-color: #E0AAFF;
     overflow: hidden; /* hide the overflow content */
     word-wrap: break-word;
 }
+
 
 
 p {

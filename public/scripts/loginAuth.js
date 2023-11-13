@@ -171,3 +171,12 @@ function logIn() {
 
 
 }
+
+function logOut() {
+  showToast("👍 Logging you out", "is-info", 3000)
+
+  setTimeout(() => {
+    localStorage.removeItem("client-credentials")
+    location.reload()
+  }, 3000)
+}
