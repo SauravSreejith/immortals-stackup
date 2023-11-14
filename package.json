@@ -4,5 +4,23 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "quick.db": "^9.1.7"
-  }
+  },
+  "name": "task-buddy",
+  "description": "![StackUp Banner](https://media.discordapp.net/attachments/1155198278787411968/1171457436419375115/stackup20banner.png) # Task Buddy ![Task Buddy](https://cdn.discordapp.com/attachments/1155198278787411968/1172039439330054184/TASK_BUDDY-removebg-preview_1.png)",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SauravSreejith/immortals-stackup.git"
+  },
+  "author": "Saurav Sreejith & Karthik Dileep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SauravSreejith/immortals-stackup/issues"
+  },
+  "homepage": "https://github.com/SauravSreejith/immortals-stackup#readme"
 }

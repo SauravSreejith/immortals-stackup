@@ -17,7 +17,7 @@ const app = express ();
 app.use(cors());
 app.use(express.json());
 
-const port = 3000 //dev server port !Change before deployment
+const port = 3000
 
 function isValidUsername(username) {
     const usernameRegex = /^[a-zA-Z0-9_]{3,20}$/; 
@@ -105,4 +105,54 @@ app.post("/auth/hashVerify", async (req, res) => {
         if (person.password == req.body.hash) { return res.send({ auth: true })} else res.send({ auth: false })
     })
 
+})
+
+
+app.post("/tasks/get", async (req, res) => {
+    db.get("Users").then(async users => {
+        let person = users.find(user => user.username == req.body.name)
+
+
+        if (!person) return
+        if (person.password !== req.body.hash) return
+
+        db.get(`tasks.${person.username}`).then(tasks => {
+            if (tasks) return res.send({ tasklist: tasks })
+        })
+    })
+})
+
+app.post("/tasks/create", async (req, res) => {
+    db.get("Users").then(async users => {
+        let person = users.find(user => user.username == req.body.name)
+
+        if (!person) return
+        if (person.password !== req.body.hash) return
+
+        let saveData = { description: req.body.content, id: req.body.id}
+
+        db.push(`tasks.${person.username}`, saveData)
+        return res.send({ status: "success"})
+    })
+})
+
+app.post("/tasks/delete", async (req, res) => {
+    db.get("Users").then(async users => {
+        let person = users.find(user => user.username == req.body.name)
+
+        if (!person) return
+        if (person.password !== req.body.hash) return
+
+        let storedArray = await db.get(`tasks.${person.username}`)
+
+
+        const indexToDelete = storedArray.findIndex(entry => entry.id === req.body.id);
+
+        if (indexToDelete !== -1) {
+            storedArray.splice(indexToDelete, 1);
+            db.set(`tasks.${person.username}`, storedArray);
+        }
+
+
+    })
 })
