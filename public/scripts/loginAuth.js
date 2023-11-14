@@ -25,6 +25,7 @@ function verifySession() {
         .then(response => response.json()).then(data => {
           if (data.auth == true) {
             showToast(`Logged in 👍 as ${usercred_json.name}`, "is-success", 5000)
+            fetchTasks()
           } else if (data.auth == false) {
             showToast("Log in failed, Please re-login", "is-danger", 5000)
             localStorage.removeItem("client-credentials")

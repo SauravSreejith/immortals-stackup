@@ -61,7 +61,7 @@ function appendTaskToScrollList(id, description) {
     deleteIconContainer.setAttribute("data-taskID", id);
     deleteIconContainer.classList.add("icon-container");
     deleteIconContainer.onclick = function () {
-      deleteTask(this);
+      delButton(this);
     };
   
     var deleteIcon = document.createElement("i");
@@ -95,42 +95,39 @@ function generateRandomId(length) {
     return randomId;
   }  
 
-
-function deleteTask(button) {
+async function delButton(button) {
     let taskid = button.getAttribute("data-taskid")
 
         let allElements = document.querySelectorAll('[data-taskID="'+taskid+'"]');
         let box = [...allElements].find(e => e.className == "box")
-        box.remove()
-
+        await deleteTask(taskid)
+        fetchTasks()
 }
 
-function strikeOut(checkbox) {
+async function strikeOut(checkbox) {
   if (checkbox.checked) {
     let taskid = checkbox.getAttribute("data-taskid")
-    let allElements = document.querySelectorAll('[data-taskID="'+taskid+'"]');
-    let description = [...allElements].find(e => e.id == "task-description")
-    description.innerHTML = `<s>${description.innerHTML}</s>`
+
+        let allElements = document.querySelectorAll('[data-taskID="'+taskid+'"]');
+        let box = [...allElements].find(e => e.className == "box")
+        await deleteTask(taskid)
+        fetchTasks()
     
-  } else {
-    let taskid = checkbox.getAttribute("data-taskid")
-    let allElements = document.querySelectorAll('[data-taskID="'+taskid+'"]');
-    let description = [...allElements].find(e => e.id == "task-description")
-    description.innerHTML = description.innerHTML.replace("<s>", "").replace("</s>", "")
   }
 }
 
 function refreshTasks() {
-  console.error()
+  fetchTasks()
 }
 
-function newTask() {
+async function newTask() {
   let newTask = document.getElementById("newtask-input")
   if (!newTask.value) return cancelTaskInput()
   let randomId = generateRandomId(5)
-  appendTaskToScrollList(randomId, newTask.value)
-  newTask.value = ""
+  await storeTask(newTask.value, randomId)
   updateInterface("inputInterface", false)
+  newTask.value = ""
+  fetchTasks()
 }
 
 function cancelTaskInput() {
