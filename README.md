@@ -9,7 +9,7 @@ A Task Management application project for TinkerHub StackUp
 ## Team Id
 immortals
 ## Link to product walkthrough
-[link to video]
+![video](https://cdn.discordapp.com/attachments/758703600163356693/1174038425486250074/Screencast_2023-11-14_224131.mp4)
 ## How it Works ?
 This section contains a general overview on how the project works and will be divided into two sections:
 #### <u>Frontend</u>
